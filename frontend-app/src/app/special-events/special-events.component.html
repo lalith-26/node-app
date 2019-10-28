@@ -1,0 +1,27 @@
+<div class="row mt-5">
+   <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Free Memory(MB)</th>
+            <th scope="col">Up Time(mins)</th>
+            <th scope="col">Speed</th>
+            <th scope="col">Utilization(%)</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let event of specialEvents">
+            
+                <tr>
+                    <td>{{event.freeMemory/1024}}</td>
+                    <td>{{event.systemUpTime/10000}}</td>
+                    <td>{{event.systemAverageSpeed}}</td>
+                    <td>{{event.systemCPUUtilization}}</td>
+                    <td>{{event.date}}</td>
+                  </tr>
+            
+         
+         
+        </tbody>
+      </table>
+  
+  </div>
